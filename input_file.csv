@@ -1,0 +1,17 @@
+,Unit,Value,Suggested Range
+Climate,-,pre1A,-
+Total_floor_area,m2,1340.564455,"[520, 15130] "
+Aspect_ratio,-,,"[1.45, 2.69]"
+Floor_to_floor_height,m,,"[3.96, 5.69]"
+Window_to_wall_ratio,-,0.222147771,"[0, 0.65]"
+Building_orientation,-,,"[0, 360]"
+People_density,person/m2,,"[0.023, 0.054]"
+Heating_setpoint_temperature,oC,,"[20, 22]"
+Cooling_setpoint_temperature,oC,,"[22, 25]"
+Service_water_usage,lpm,,"[1.33, 2.43]"
+Heating_humidity_ratio,kg-H2O/kg-air,,"[0.0056, 0.0104]"
+Cooling_humidity_ratio,kg-H2O/kg-air,,"[0.0060, 0.0111]"
+Weekly_operation_hour,hours/week,28.47217909,"[25, 95]"
+Electric_equipment_power_density,W/m2,10.65137452,"Pre-1980: [5.40, 21.30] 
+Post-1980: [3.37, 13.34]] "
+Ventilation,m3/s-person ,,"[0.0066, 0.0236]"
