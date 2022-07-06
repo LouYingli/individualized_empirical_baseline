@@ -20,8 +20,8 @@ sample = np.array(pd.read_csv('input_file.csv',skiprows=0)).T
 sample = pd.DataFrame(list(sample[2]),
                       index =['Climate','Total_floor_area', 'Aspect_ratio','Floor_to_floor_height',
                               'Window_to_wall_ratio','Building_orientation','People_density',
-                                'Heating_setpoint_temperature','Cooling_setpoint_temperature',
-                                'Service_water_usage','Heating_humidity_ratio','Cooling_humidity_ratio',
+                                'Indoor_heating_setpoint_temperature','Indoor_cooling_setpoint_temperature',
+                                'Service_water_usage','Indoor_heating_design_supply_air_humidity_ratio','Indoor_cooling_design_supply_air_humidity_ratio',
                                 'Weekly_operation_hour','Electric_equipment_power_density','Ventilation'])
 climate = sample.loc['Climate'][0]
 sample = sample.transpose()
@@ -72,8 +72,8 @@ temp=pd.DataFrame(list(zip(Input1,Input2,Input3,Input4,Input5,Input6,Input7,Inpu
                            Input9,Input10,Input11,Input12,Input13,Input14,Output)),
     columns =['Total_floor_area', 'Aspect_ratio','Floor_to_floor_height',
               'Window_to_wall_ratio','Building_orientation','People_density',
-              'Heating_setpoint_temperature','Cooling_setpoint_temperature',
-              'Service_water_usage','Heating_humidity_ratio','Cooling_humidity_ratio',
+              'Indoor_heating_setpoint_temperature','Indoor_cooling_setpoint_temperature',
+              'Service_water_usage','Indoor_heating_design_supply_air_humidity_ratio','Indoor_cooling_design_supply_air_humidity_ratio',
               'Weekly_operation_hour','Electric_equipment_power_density','Ventilation','SiteEnergy'])
             
 model=clf.fit(temp[KeyVariable], temp['SiteEnergy'])
